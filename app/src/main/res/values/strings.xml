@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Muskelgrupper</string>
+    <string name="ovningar_title">Övningar</string>
+    <string name="biceps_button">Biceps</string>
+    <string name="tricpes_button">Triceps</string>
+    <string name="chest_button">Chest</string>
+    <string name="back_button">Back</string>
+    <string name="legs_button">Legs</string>
+    <string name="others_button">Others</string>
+</resources>

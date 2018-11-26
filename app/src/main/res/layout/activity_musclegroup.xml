@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WorkoutGroupActivity">
+
+
+    <Button
+        android:id="@+id/button_chest"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/check"
+        app:layout_constraintStart_toEndOf="@+id/button_triceps"
+        app:layout_constraintTop_toBottomOf="@+id/chestTextView" />
+
+    <Button
+        android:id="@+id/button_triceps"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/check"
+        app:layout_constraintStart_toEndOf="@+id/button_biceps"
+        app:layout_constraintTop_toBottomOf="@+id/tricepsTextView" />
+
+    <Button
+        android:id="@+id/button_back"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/check"
+        app:layout_constraintStart_toEndOf="@+id/button_chest"
+        app:layout_constraintTop_toBottomOf="@+id/backTextView" />
+
+    <Button
+        android:id="@+id/button_legs"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/check"
+        app:layout_constraintStart_toEndOf="@+id/button_back"
+        app:layout_constraintTop_toBottomOf="@+id/legsTextView" />
+
+    <Button
+        android:id="@+id/button_others"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/check"
+        app:layout_constraintStart_toEndOf="@+id/button_legs"
+        app:layout_constraintTop_toBottomOf="@+id/othersTextView" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_main"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bicepsTextView" />
+
+    <TextView
+        android:id="@+id/bicepsTextView"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/biceps_button"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tricepsTextView"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/tricpes_button"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/bicepsTextView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/chestTextView"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/chest_button"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tricepsTextView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/backTextView"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/back_button"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/chestTextView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/legsTextView"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/legs_button"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/backTextView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/othersTextView"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/others_button"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/legsTextView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_biceps"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/check"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bicepsTextView" />
+
+</android.support.constraint.ConstraintLayout>
